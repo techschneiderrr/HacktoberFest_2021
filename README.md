@@ -39,6 +39,7 @@ During the entire month of October 2021, all you have to do is contribute to any
 - You can contribute any kind of DS-algo programme in any of the above language.
 - You can also make a sub-folder inside the relevant folder to commit a codes of more than 2 files.
 - You may also choose some competetive coding problem for example a calculator using switchcase and solve it with appropriate comments to get your pull request accepted.
+- If you feel there some language or domain left you can also create a folder and start contributing.
 
 
 Please adhere to this project's `code of conduct`.
