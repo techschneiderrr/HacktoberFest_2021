@@ -1,3 +1,7 @@
+/*
+    This program shuffles an integer array
+    Can be adapted for other shuffling problems
+*/
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
