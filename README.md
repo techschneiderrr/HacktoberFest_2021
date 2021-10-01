@@ -1,6 +1,6 @@
 ## Screenshots
 
-![App Screenshot]()
+![App Screenshot](https://github.com/techschneiderrr/HacktoberFest_2021/blob/main/readme_img.png?raw=true)
 
 # Hacktober Fest 2021
 
