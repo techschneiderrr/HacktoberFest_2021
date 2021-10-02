@@ -1,0 +1,96 @@
+#include<bits/stdc++.h>
+    using namespace std;
+    int n1=0,n2=0;
+    int recs(int arr[], int l,int r, int x)
+    {
+        n1++;
+        if (r < l)
+        {n2++;
+        return -1;}
+        if (arr[l] == x){n2++;return l;}
+        if (arr[r] == x){n2++;return r;}
+        return recs(arr, l + 1,r - 1, x);
+        
+    }
+        void recur(int arr[],int n)
+        {
+            int x;
+            cout<<"Enter number to be searched"<<endl;
+            cin>>x;
+            int index = recs(arr, 0, n - 1, x);
+            if (index != -1)
+            {cout << "Element " << x << " is present at index"<< index<<endl;
+            cout<<"It took "<< ::n1 << " calls to function and"<<::n2<<" comparisons to findelement"<<endl;
+                
+            }
+            else
+            {
+                cout << "Element" << x << " is not present";
+            ::n1=::n2=0;
+            }
+            
+        }
+            
+        
+        int binarys(int list[], int to_be_found, int p, int r)
+        {
+            if (p > r)
+        return -1;
+        else
+        {
+            int q = (p + r) / 2;
+            if (list[q] == to_be_found)
+            return q;
+            else
+            {
+            if (list[q] < to_be_found)
+            return binarys(list, to_be_found,q + 1, r);
+            else return binarys(list, to_be_found,p, q - 1);
+                
+            }
+        }
+        }
+        void binary(int arr[],int n)
+        {int x;
+        cout<<"Enter number to be searched"<<endl;
+        cin>>x;
+        int index = binarys(arr, x,0, n - 1);
+        if (index != -1)
+        {cout << "Element " << x << " is present at index"<< index<<endl;
+        cout<<"It took "<< ::n1 << " calls to function and"<<::n2+::n1<<" comparisons tofind element"<<endl;
+        }
+        else
+        {
+            cout << "Element " << x << " is not present";
+            ::n1=::n2=0;
+            
+        }
+        }
+        int main()
+        {
+            int arr[30];int n,ch;
+        cout <<"\n Enter size of array ";
+        cin >> n;
+        cout <<"Enter the Elements: ";
+        for(int i=0; i<n; i++)
+        cin >> arr[i];
+        do
+        {cout<<"Options:"<<endl;
+        cout<<"1. Recursive Linear"<<endl;
+        cout<<"2. Binary"<<endl;
+        cout<<"2. Exit"<<endl;
+        cout<<"Enter your Choice"<<endl;
+        cin>>ch;
+        switch(ch)
+        {
+             case 1: recur(arr,n);
+             break;
+             case 2: binary(arr,n);
+             break;
+             case 3:exit(0);
+            
+        }
+            
+        }while(1);
+        return 0;
+        }
