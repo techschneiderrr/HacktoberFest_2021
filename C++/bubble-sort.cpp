@@ -1,43 +1,44 @@
-//Ishita Karandikar
-// C++ program for implementation of Bubble sort
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
- 
-void swap(int *x, int *y)
-{
-    int temp = *x;
-    *x = *y;
-    *y = temp;
-}
- 
-// A function to implement bubble sort
-void bubbleSort(int arr[], int n)
-{
-    int i, j;
-    for (i = 0; i < n-1; i++)    
+
+
+void bubbleSort(int a[], int s) {
+
+  
+  for (int step = 0; step < (s-1); ++step) {
+      
+    
+    for (int i = 0; i < s - (step-1); ++i) {
+
      
-    // Last i elements are already in place
-    for (j = 0; j < n-i-1; j++)
-        if (arr[j] > arr[j+1])
-            swap(&arr[j], &arr[j+1]);
+      if (a[i] > a[i + 1]) {
+
+        
+        int temp = a[i];
+        a[i] = a[i + 1];
+        a[i + 1] = temp;
+      }
+    }
+  }
 }
- 
-/* Function to print an array */
-void printArray(int arr[], int size)
+
+
+void printArray(int a[], int s) 
 {
-    int i;
-    for (i = 0; i < size; i++)
-        cout << arr[i] << " ";
-    cout << endl;
+  for (int i = 0; i < s; ++i) {
+    cout << "  " << a[i];
+  }
+  cout << "\n";
 }
- 
-// Driver code
-int main()
-{
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    bubbleSort(arr, n);
-    cout<<"Sorted array: \n";
-    printArray(arr, n);
-    return 0;
+
+int main() {
+  int data[] = {-2, 45, 0, 11, -9};
+  
+  
+  int s = sizeof(data) / sizeof(data[0]);
+  
+  bubbleSort(data, s);
+  
+  cout << "Sorted Array in Ascending Order:\n";  
+  printArray(data, s);
 }
