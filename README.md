@@ -17,9 +17,9 @@ During the entire month of October 2021, all you have to do is contribute to any
   
 ## Steps for contributing to a repository.
 
-- Fork this repository.
-
 - Star this repository.⭐
+
+- Fork this repository.
 
 - Choose your favourite programming language.
 
@@ -27,7 +27,7 @@ During the entire month of October 2021, all you have to do is contribute to any
 
 - Commit the change and generate a valid pull request.
 
-- After carefully reviewing your code , if it is valid then it will be merged otherwise discarded.
+- After carefully reviewing your code , if it is valid then your Pull Request will be merged otherwise discarded.
 
 
   
