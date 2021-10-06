@@ -4,7 +4,7 @@
 
 # Hacktober Fest 2021
 
-Hacktoberfest 2021 is a month long virtual festival event to celebrate open source contributions presented by Digital Ocean, Intel and DEV. It is the easiest way to get into open source!
+Hacktoberfest 2021 is a one month long virtual festival event to celebrate open source contributions presented by Digital Ocean, Intel and DEV. It is the easiest way to get into open source!!
 
 
 During the entire month of October 2021, all you have to do is contribute to any open source projects and open at least 4 pull requests.
