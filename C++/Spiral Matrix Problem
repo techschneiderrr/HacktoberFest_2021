@@ -1,0 +1,35 @@
+// Spiral Matrix Problem
+// Link: https://leetcode.com/problems/spiral-matrix/
+// Mayank Jain
+
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int minrow = 0,mincol = 0,maxrow = matrix.size(),maxcol = matrix[0].size();
+        int tot = maxrow*maxcol,cnt = 0;
+        vector<int> ans;  maxrow--; maxcol--;
+        while(cnt<tot){
+            for(int i=mincol;i<=maxcol && cnt<tot;i++){
+                ans.push_back(matrix[minrow][i]);
+                cnt++;
+            }
+            for(int i=minrow + 1;i<=maxrow && cnt<tot;i++){
+                ans.push_back(matrix[i][maxcol]);
+                cnt++;
+            }
+            for(int i=maxcol- 1;i>=mincol && cnt<tot;i--){
+                ans.push_back(matrix[maxrow][i]);
+                cnt++;
+            }
+            for(int i=maxrow - 1;i>=minrow + 1 && cnt<tot;i--){
+                ans.push_back(matrix[i][mincol]);
+                cnt++;
+            }
+            maxrow-=1;
+            maxcol-=1;
+            minrow+=1;
+            mincol+=1;
+        }
+        return ans;
+    }
+};
