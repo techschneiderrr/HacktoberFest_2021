@@ -1,0 +1,49 @@
+body{
+  background-color: #222831;
+  text-align: center;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFD369;
+    border-radius: 10px;
+}
+/* Scrollbar */
+
+.refresh{
+  padding: 3%;
+  color: #FFD369;
+  font-family: 'Tourney', cursive;
+  font-size: 6rem;
+}
+
+.row{
+  padding: 1% 0 4%;
+}
+
+.player{
+  color: #FFD369;
+  padding: 0 0 5%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.firstDice{
+  width:65%;
+}
+
+.secondDice{
+  width:65%;
+}
+
+#result{
+  font-family: 'Orbitron', sans-serif;
+  color: #FFD369;
+  position: relative;
+  padding: 10% 0 10%;
+}
