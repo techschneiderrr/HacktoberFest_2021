@@ -21,11 +21,11 @@ During the entire month of October 2021, all you have to do is contribute to any
 
 - Fork this repository.
 
-- Choose your favourite programming language.
+- Choose from your favourite programming language.
 
 - Add valid program (or code) on that sub repository.
 
-- Commit the change and generate a valid pull request.
+- Commit the changes and generate a valid pull request.
 
 - After carefully reviewing your code , if it is valid then your Pull Request will be merged otherwise discarded.
 
