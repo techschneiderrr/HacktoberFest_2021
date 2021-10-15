@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+}
+.navbar .logo{
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+    font-weight: 500;
+}
+.navbar .nav{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    list-style: none;
+}
+.navbar .nav li a{
+    text-decoration: none;
+}
+.navbar .nav li a:hover{
+    color: #ffeb3b;
+}
+
+.mainpage{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+.mainpage .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mainpage .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    background-position: center;
+    transition: 0.4s;
+}
+.mainpage .imgBx img.active{
+    opacity: 1;
+}
+.controls{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    
+}
+.controls li{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.controls li:hover{
+    background: #ffeb3b;
+}
+.controls li:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid #111;
+    border-bottom : 3px solid #111;
+    transform: rotate(45deg);
+
+}
+
+.controls li:nth-child(2):before{
+    transform: rotate(225deg);
+
+}
+
+.contentBx{
+    position: absolute;
+    bottom: 0;
+    max-width: 700px;
+
+}
+.contentBx div{
+    display: none;
+}
+
+.contentBx div.active{
+    display: block;
+    padding: 50px;
+    background: rgba(0,0,0,0.2);
+
+}
+
+.contentBx div h2{
+    font-size:2em;
+}
+
+.contentBx div p{
+    font-size: 1.1em;
+
+}
+.contentBx div a{
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    margin-top: 10px;
+    color: black;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    transition:0.11s;
+
+}
+.contentBx div a:hover{
+    background: #ffeb3b;
+    letter-spacing: 3px;
+}
