@@ -7,7 +7,7 @@
 Hacktoberfest 2021 is a one month long virtual festival event to celebrate open source contributions presented by Digital Ocean, Intel and DEV. It is the easiest way to get into open source!!
 
 
-During the entire month of October 2021, all you have to do is contribute to any open source projects and open at least 4 pull requests.
+During the complete month of October 2021, all you have to do is contribute to any open source projects and open at least 4 pull requests.
 ## Important Links
 
  - [Hacktober Fest website](https://hacktoberfest.digitalocean.com/)
@@ -15,7 +15,7 @@ During the entire month of October 2021, all you have to do is contribute to any
 
 
   
-## Steps for contributing to a repository.
+## Follow these Steps for contributing to a repository.
 
 - Star this repository.⭐
 
