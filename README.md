@@ -15,7 +15,7 @@ During the complete month of October 2021, all you have to do is contribute to a
 
 
   
-## Follow these Steps for contributing to a repository.
+## Just Follow the Steps given below for contributing to a Repository.
 
 - Star this repository.⭐
 
