@@ -1,3 +1,4 @@
+; This is a Lisp file which can be executed using appropriate Lisp interpreter or Lisp file can also be executed online using Lisp interpreter easily.
 ; I have written a program in LISP to check whether a number is an armstrong number or not.
 ; A positive integer having n digits is called an Armstrong number of order n if (abcd... = a^n + b^n + c^n + d^n + ...)
 ; Firstly I have created a function ArmCheck() and in the last I have called the function
