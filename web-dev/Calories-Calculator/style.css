@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+body{
+    background-color:#222222;
+    color: white;
+    font-family: Montserrat ,sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+#exerciseType{
+    width: 420px;
+    height: 43px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Montserrat , sans-serif;
+    font-size: 20px;
+    background-color: #585858;
+    color: white;
+    text-align-last:center
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form input{
+    background-color: #585858;
+    color: white;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+
+input::placeholder{
+    font-family: Montserrat , sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#submitButton {
+    font-family: Montserrat , sans-serif;
+    font-size: 20px;
+    background-color: #7e7e7e;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    width: 420px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+
+}
+#submitButton:hover{
+    background-color: #585858;
+}
+
+#resultDiv {
+    text-align: center;
+}
+h2 {
+    display: block;
+}
+
+#result{
+    display: inline-block;
+    font-size: 20px;
+    padding: 11px;
+    width: 395px;
+    border: 3px solid #585858;
+
+}
+
