@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calories calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>Calculate Calories Burned</h1>
+        </header>
+        <div class="input-form">
+            <select name="ExerciseType" id="exerciseType">
+                <option value="JogWalking">Jog/walk combination</option>
+                <option value="briskWalking">Brisk walk</option>
+                <option value="slowWalking">Slow walk</option>
+                <option value="skipping">Rope skipping</option>
+                <option value="exercise">Exercise (heavy, vigorous effort)</option>
+                <option value="sleep">Sleep</option>
+            </select>
+            <input id="duration" class="input" name="duration" type="number" name="duration" autocomplete="off" placeholder="Duration (in minute)" required/>
+            <input id="weight" class="input" name="weight" type="number" name="weight" autocomplete="off" placeholder="Weight (in Kg)" required>
+            <button id="submitButton">Submit</button>
+        </div>
+        <div id="resultDiv">
+            <p id="result">You burned *** calories</p>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
